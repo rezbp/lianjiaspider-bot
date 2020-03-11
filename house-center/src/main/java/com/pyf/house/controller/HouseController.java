@@ -8,8 +8,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
-@RequestMapping("/houses")
+@RestController
+@RequestMapping("/v1/houses")
 public class HouseController {
 
     @Autowired

@@ -8,13 +8,14 @@ import org.springframework.stereotype.Service;
 /**
  * @author ADMIN
  */
-@Service("SmsService")
+@Service
 public class SmsServiceImpl implements SmsService {
 
     private final static Logger logger = LoggerFactory.getLogger(SmsServiceImpl.class);
 
     @Override
-    public void sendMail(String msg) {
+    public boolean sendMail(String msg) {
         logger.info("send msg: {}", msg);
+        return true;
     }
 }

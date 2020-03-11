@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author ADMIN
  */
-@EnableFeignClients(basePackages = "com.pyf.sms")
+@EnableFeignClients(basePackages = "com.pyf.house")
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableJpaRepositories
