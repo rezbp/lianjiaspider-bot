@@ -11,6 +11,7 @@ public class SmsController {
     @Autowired
     private SmsService smsService;
 
+
     @RequestMapping(value = "/send", method = RequestMethod.GET)
     public void send(@RequestParam("msg") String msg) {
         smsService.sendMail(msg);

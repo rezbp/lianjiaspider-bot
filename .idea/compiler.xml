@@ -6,10 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-8260" />
+        <module name="servicegateway" />
         <module name="housecenter" />
         <module name="smscenter" />
       </profile>
+      <profile name="Annotation profile for house-db-es-eureka-server" enabled="true">
+        <sourceOutputDir name="../serivcediscovery/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../serivcediscovery/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-8260" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-8260" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.pyf.house.controller;
 
+import com.pyf.house.annotation.Token;
 import com.pyf.house.api.HouseService;
 import com.pyf.house.dto.PageParam;
 import com.pyf.house.service.HouseServiceImpl;
@@ -17,6 +18,7 @@ public class HouseController {
 
     @RequestMapping(value = "/getPages", method = RequestMethod.GET)
     @ResponseBody
+    @Token
     public Page getHousePage(@RequestBody PageParam pageParam) {
         return houseService.getPages(pageParam);
     }
