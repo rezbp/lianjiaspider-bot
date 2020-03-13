@@ -12,6 +12,7 @@
         <module>sms-center</module>
         <module>house-center</module>
         <module>service-gateway</module>
+        <module>service-config</module>
     </modules>
 
     <dependencies>
