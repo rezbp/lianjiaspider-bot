@@ -9,10 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>sms-center</module>
-        <module>house-center</module>
-        <module>service-gateway</module>
-        <module>service-config</module>
+        <module>sms-center-8402</module>
+        <module>house-center-8401</module>
+        <module>service-gateway-8261</module>
+        <module>service-config-8265</module>
     </modules>
 
     <dependencies>

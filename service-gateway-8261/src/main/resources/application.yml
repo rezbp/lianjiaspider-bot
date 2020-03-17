@@ -1,0 +1,24 @@
+server:
+  port: 8261
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8260/eureka
+
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: sms-center
+          uri: lb://sms-center
+        - Path=/sms-service
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+  application:
+    name: service-gateway
+
+
+

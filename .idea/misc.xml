@@ -7,6 +7,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/serivcediscovery/pom.xml" />
         <option value="$PROJECT_DIR$/serivce-discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/house-center-8401/pom.xml" />
+        <option value="$PROJECT_DIR$/serivce-discovery-8260/pom.xml" />
+        <option value="$PROJECT_DIR$/service-config-8265/pom.xml" />
+        <option value="$PROJECT_DIR$/service-gateway-8261/pom.xml" />
+        <option value="$PROJECT_DIR$/sms-center-8402/pom.xml" />
       </list>
     </option>
   </component>
