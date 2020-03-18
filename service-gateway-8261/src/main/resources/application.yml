@@ -4,21 +4,31 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8260/eureka
-
-
 spring:
+  application:
+    name: service-gateway
+  redis:
+    host: 134.175.81.50
+    port: 6379
+    password: d817c0ce7876a0af4e2ae5849e5e9aa3
+    database: 0
   cloud:
     gateway:
-      routes:
-        - id: sms-center
-          uri: lb://sms-center
-        - Path=/sms-service
-      discovery:
+     discovery:
         locator:
           enabled: true
           lower-case-service-id: true
-  application:
-    name: service-gateway
+     routes:
+       - id: ip-rate-limit
+         uri: lb://sms-center
+         predicates:
+           - Path=/**
+         filters:
+           - name: RequestRateLimiter
+             args:
+                redis-rate-limiter.replenishRate: 10
+                redis-rate-limiter.burstCapacity: 20
+                key-resolver: "#{@ipKeyResolver}"
 
 
 
