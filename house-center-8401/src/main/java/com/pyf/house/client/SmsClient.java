@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "SMS-CENTER", fallback = SmsServiceFallback.class)
+@FeignClient(value = "sms-center", fallback = SmsServiceFallback.class)
 public interface SmsClient {
 
-    @RequestMapping(value = "/sms-center/sms/send", method = RequestMethod.GET)
+    @RequestMapping(value = "/sms/send", method = RequestMethod.GET)
     void send(@RequestParam("msg") String msg);
 }

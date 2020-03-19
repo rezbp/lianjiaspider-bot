@@ -16,4 +16,10 @@ public class SmsController {
     public void send(@RequestParam("msg") String msg) {
         smsService.sendMail(msg);
     }
+
+
+    @RequestMapping(value = "/getRSA", method = RequestMethod.GET)
+    public String getRSA() {
+        return smsService.getRSA();
+    }
 }
