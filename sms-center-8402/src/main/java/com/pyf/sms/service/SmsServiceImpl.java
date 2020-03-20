@@ -12,6 +12,7 @@ import cn.hutool.json.JSON;
 import cn.hutool.json.JSONConverter;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
+import com.pyf.common.JwtUtil;
 import com.pyf.sms.api.SmsService;
 import com.pyf.sms.dto.Body;
 import com.pyf.sms.dto.Head;
@@ -72,4 +73,17 @@ public class SmsServiceImpl implements SmsService {
 
         return code;
     }
+
+    @Override
+    public String getToken() {
+        String token = JwtUtil.getToken("pang-ying-fa", 1);
+        return token;
+    }
+
+    @Override
+    public String checkToken(String token) {
+        return JwtUtil.checkTokenAndGetInf(token);
+    }
+
+
 }

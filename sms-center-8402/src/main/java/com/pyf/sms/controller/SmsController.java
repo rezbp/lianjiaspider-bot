@@ -22,4 +22,14 @@ public class SmsController {
     public String getRSA() {
         return smsService.getRSA();
     }
+
+    @RequestMapping(value = "/getToken", method = RequestMethod.GET)
+    public String getToken() {
+        return smsService.getToken();
+    }
+
+    @RequestMapping(value = "/checkToken", method = RequestMethod.GET)
+    public String checkToken(@RequestParam("token") String token) {
+        return smsService.checkToken(token);
+    }
 }
