@@ -7,14 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-config" />
-        <module name="serivce-discovery" />
         <module name="house-center" />
         <module name="common" />
         <module name="servicegateway" />
+        <module name="sms-center" />
         <module name="housecenter" />
+        <module name="serivce-discovery" />
         <module name="service-gateway" />
-        <module name="serviceconfig" />
         <module name="smscenter" />
+        <module name="serviceconfig" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
