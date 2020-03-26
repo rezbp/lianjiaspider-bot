@@ -53,10 +53,9 @@ public class LogAspect {
 
         Token tokenAnno = method.getAnnotation(Token.class);
         String token = request.getHeader("token");
-        appRuntimeEnv.ensureToken(token);
         if (tokenAnno != null && tokenAnno.require()) {
+            appRuntimeEnv.ensureToken(token);
             if (!"pyf".equals(token)) {
-
                 throw new Exception("token校验不通过");
             }
         }

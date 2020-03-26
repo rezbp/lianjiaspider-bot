@@ -18,7 +18,6 @@ public class TimeUtil {
 
     public static Long getCurrentTime() {
         Long time = System.currentTimeMillis();
-        logger.info("System.currentTimeSecond:{}, timeStr: {}", time, DateUtil.format(new Date(),"yyyy-MM-dd HH:mm:ss"));
         return time;
     }
 

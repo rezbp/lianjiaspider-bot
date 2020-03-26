@@ -2,20 +2,21 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-config" />
+        <module name="serviceconfig" />
         <module name="house-center" />
         <module name="common" />
         <module name="servicegateway" />
-        <module name="sms-center" />
         <module name="housecenter" />
         <module name="serivce-discovery" />
         <module name="service-gateway" />
         <module name="smscenter" />
-        <module name="serviceconfig" />
+        <module name="sms-center" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

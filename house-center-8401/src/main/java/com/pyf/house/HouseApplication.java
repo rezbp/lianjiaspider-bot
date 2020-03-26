@@ -17,6 +17,7 @@ import org.springframework.stereotype.Component;
 @EnableJpaRepositories
 public class HouseApplication {
     public static void main(String[] args) {
+        System.setProperty("es.set.netty.runtime.available.processors", "false");
         SpringApplication app = new SpringApplication(HouseApplication.class);
         app.run(args);
     }
