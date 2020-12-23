@@ -8,19 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-config" />
-        <module name="serviceconfig" />
+        <module name="serivce-discovery" />
         <module name="house-center" />
         <module name="common" />
         <module name="servicegateway" />
         <module name="housecenter" />
-        <module name="serivce-discovery" />
+        <module name="serviceconfig" />
         <module name="service-gateway" />
         <module name="smscenter" />
         <module name="sms-center" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="eureka-8260" target="1.8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>
